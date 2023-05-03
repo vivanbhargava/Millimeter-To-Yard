@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Millimeter To Yard</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Millimeter</label>
+            <input id="inputmilli" type="number" placeholder="Millimeter" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Yard: <span id="outputyard"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputyard").innerHTML = valNum / 914.4;
+        }
+    </script>
+
+</body></html>
